@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Game /> tests should render a board 1`] = `
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+      <td>
+        <button />
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
