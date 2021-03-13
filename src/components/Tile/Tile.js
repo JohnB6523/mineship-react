@@ -4,9 +4,12 @@ import tile_unrevealed from "../../images/tile_unrevealed.png"
 function Tile(props) {
 	return (
 		<button className="tile" onClick={props.onClick}>
-			<img src={tile_unrevealed} alt=""></img>
+			<img src={props.image} alt=""></img>
 		</button>
 	);
+}
+Tile.defaultProps = {
+	image: tile_unrevealed
 }
 
 export { Tile }

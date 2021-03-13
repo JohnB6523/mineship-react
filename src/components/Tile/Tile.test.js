@@ -15,11 +15,9 @@ describe("<Tile /> tests", () => {
 	it("should call the click callback handler", () => {
 		// Arrange
 		const onClick = jest.fn()
-
-		// Act
 		const { container } = render(<Tile onClick={onClick} />)
+		// Act
 		fireEvent.click(container.firstChild)
-
 		// Assert
 		expect(onClick).toHaveBeenCalledTimes(1)
 	})
