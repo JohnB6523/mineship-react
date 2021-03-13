@@ -1,3 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Tile /> tests should render as default button 1`] = `<button />`;
+exports[`<Tile /> tests should render as button with image tile_unrevealed.png 1`] = `
+<button
+  class="tile"
+>
+  <img
+    alt=""
+    src="tile_unrevealed.png"
+  />
+</button>
+`;

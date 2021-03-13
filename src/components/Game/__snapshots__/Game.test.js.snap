@@ -1,216 +1,520 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Game /> tests should render a board 1`] = `
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-      <td>
-        <button />
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div
+  class="board"
+>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+  <button
+    class="tile"
+  >
+    <img
+      alt=""
+      src="tile_unrevealed.png"
+    />
+  </button>
+</div>
 `;

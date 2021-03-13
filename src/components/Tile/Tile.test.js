@@ -1,11 +1,26 @@
-import React from 'react'
-import { render } from '@testing-library/react'
-import '@testing-library/jest-dom/extend-expect'
-import { Tile } from './Tile'
+import React from "react"
+import { render, fireEvent } from "@testing-library/react"
+import "@testing-library/jest-dom/extend-expect"
+import { Tile } from "./Tile"
+import tile_unrevealed from "../../images/tile_unrevealed.png"
 
-describe('<Tile /> tests', () => {
-	it('should render as default button', () => {
+describe("<Tile /> tests", () => {
+	it("should render as button with image tile_unrevealed.png", () => {
 		const { container } = render(<Tile />)
 		expect(container.firstChild).toMatchSnapshot()
+		expect(container.firstChild).toHaveClass("tile")
+		expect(container.firstChild.firstChild).toHaveAttribute("src", tile_unrevealed)
+	})
+
+	it("should call the click callback handler", () => {
+		// Arrange
+		const onClick = jest.fn()
+
+		// Act
+		const { container } = render(<Tile onClick={onClick} />)
+		fireEvent.click(container.firstChild)
+
+		// Assert
+		expect(onClick).toHaveBeenCalledTimes(1)
 	})
 })

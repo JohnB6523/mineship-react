@@ -1,0 +1,18 @@
+.board {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    background-image: url(./images/grid.png);
+    padding: 1px;
+}
+
+.tile{
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 0px;
+    line-height: 1;
+    background: transparent;
+    -webkit-appearance: none;
+}
