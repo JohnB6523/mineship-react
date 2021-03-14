@@ -5,7 +5,7 @@ exports[`<Tile /> tests should render as button with image tile_unrevealed.png 1
   class="tile"
 >
   <img
-    alt=""
+    alt="Unrevealed"
     src="tile_unrevealed.png"
   />
 </button>

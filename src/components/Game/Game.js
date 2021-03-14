@@ -1,19 +1,46 @@
 import * as React from "react"
 import { Board } from "../Board"
-import tile_unrevealed from "../../images/tile_unrevealed.png"
-import tile_0 from "../../images/tile_0.png"
+
+function initGame() {
+	// Generate unrevealed tiles
+	let tileImages = Array.from({length: 8}, () => Array.from({length: 8}, () => "Unrevealed"))
+	// Generate 10 mines
+	let mines = []
+	for (let i = 0; i < 10; i++) {
+		let spaceEmpty = true
+		let minePos = []
+		do {
+			spaceEmpty = true
+			minePos = [Math.floor(Math.random() * 8), Math.floor(Math.random() * 8)]
+			for (let mine of mines) {
+				if (mine[0] === minePos[0] && mine[1] === minePos[1]) {
+					spaceEmpty = false
+				}
+			}
+		} while (spaceEmpty === false)
+		mines.push(minePos)
+	}
+	return {tileImages: tileImages, mines: mines}
+}
 
 class Game extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = {
-			tileImages: Array.from({length: 8}, () => Array.from({length: 8}, () => tile_unrevealed))
-		}
+		this.state = initGame()
 	}
+
 	handleClick(x, y) {
 		let tileImages = this.state.tileImages.slice()
-		tileImages[y][x] = tile_0
-		this.setState({tileImages: tileImages})
+		// Check if mine
+		let isMine = false
+		for (let mine of this.state.mines) {
+			if (mine[0] === x && mine[1] === y){
+				isMine = true
+				break
+			}
+		}
+		tileImages[y][x] = isMine ? "Mine" : "0"
+		this.setState({tileImages: tileImages, mines: this.state.mines})
 	}
 
 	render() {

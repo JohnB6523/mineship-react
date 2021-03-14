@@ -8,7 +8,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -16,7 +16,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -24,7 +24,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -32,7 +32,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -40,7 +40,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -48,7 +48,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -56,7 +56,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -64,7 +64,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -72,7 +72,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -80,7 +80,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -88,7 +88,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -96,7 +96,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -104,7 +104,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -112,7 +112,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -120,7 +120,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -128,7 +128,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -136,7 +136,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -144,7 +144,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -152,7 +152,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -160,7 +160,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -168,7 +168,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -176,7 +176,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -184,7 +184,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -192,7 +192,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -200,7 +200,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -208,7 +208,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -216,7 +216,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -224,7 +224,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -232,7 +232,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -240,7 +240,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -248,7 +248,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -256,7 +256,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -264,7 +264,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -272,7 +272,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -280,7 +280,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -288,7 +288,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -296,7 +296,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -304,7 +304,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -312,7 +312,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -320,7 +320,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -328,7 +328,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -336,7 +336,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -344,7 +344,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -352,7 +352,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -360,7 +360,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -368,7 +368,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -376,7 +376,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -384,7 +384,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -392,7 +392,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -400,7 +400,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -408,7 +408,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -416,7 +416,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -424,7 +424,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -432,7 +432,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -440,7 +440,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -448,7 +448,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -456,7 +456,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -464,7 +464,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -472,7 +472,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -480,7 +480,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -488,7 +488,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -496,7 +496,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -504,7 +504,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>
@@ -512,7 +512,7 @@ exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] 
     class="tile"
   >
     <img
-      alt=""
+      alt="Unrevealed"
       src="tile_unrevealed.png"
     />
   </button>

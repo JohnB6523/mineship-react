@@ -1,11 +1,10 @@
 import * as React from "react"
 import { Tile } from "../Tile"
-import tile_unrevealed from "../../images/tile_unrevealed.png"
 
 class Board extends React.Component {
 	static defaultProps = {
 		onClick: () => {},
-		tileImages: Array.from({length: 8}, () => Array.from({length: 8}, () => tile_unrevealed))
+		tileImages: Array.from({length: 8}, () => Array.from({length: 8}, () => "Unrevealed"))
 	}
 	render() {
 		let tiles = []
