@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Board } from "../Board"
+import { NewGameButton } from "../NewGameButton/NewGameButton"
 
 function initGame() {
 	// Generate unrevealed tiles
@@ -45,7 +46,10 @@ class Game extends React.Component {
 
 	render() {
 		return (
-			<Board onClick={(x, y) => this.handleClick(x, y)} tileImages={this.state.tileImages} />
+			<div>
+				<Board onClick={(x, y) => this.handleClick(x, y)} tileImages={this.state.tileImages} />
+				<NewGameButton onClick={() => this.setState(initGame())} />
+			</div>
 		);
 	}
 }

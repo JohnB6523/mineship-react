@@ -14,9 +14,10 @@ describe("<Game /> tests", () => {
 		// Arrange
 		const { container } = render(<Game />)
 		// Act
-		let tile = container.firstChild.firstChild.firstChild
+		let tile = container.firstChild.firstChild.firstChild.firstChild
 		fireEvent.click(tile)
 		// Assert
+		expect(tile).toHaveAttribute("src")
 		expect(tile).not.toHaveAttribute("src", tile_unrevealed)
 	})
 
@@ -24,8 +25,20 @@ describe("<Game /> tests", () => {
 		// Arrange
 		const { container } = render(<Game />)
 		// Act
-		container.firstChild.childNodes.forEach((tile) => fireEvent.click(tile))
+		container.firstChild.firstChild.childNodes.forEach((tile) => fireEvent.click(tile))
 		// Assert
 		expect(screen.getAllByAltText("Mine").length).toBe(10)
+	})
+
+	it("should reset after pressing New Game", () => {
+		// Arrange
+		const { container } = render(<Game />)
+		// Act
+		fireEvent.click(container.firstChild.firstChild.firstChild)
+		let numTilesBefore = screen.getAllByAltText("Unrevealed").length
+		fireEvent.click(screen.getByRole("button", {name: /new game/i}))
+		let numTilesAfter = screen.getAllByAltText("Unrevealed").length
+		// Assert
+		expect(numTilesAfter).not.toBe(numTilesBefore)
 	})
 })
