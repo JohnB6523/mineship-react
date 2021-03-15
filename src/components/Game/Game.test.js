@@ -27,7 +27,16 @@ describe("<Game /> tests", () => {
 		// Act
 		container.firstChild.firstChild.childNodes.forEach((tile) => fireEvent.click(tile))
 		// Assert
-		expect(screen.getAllByAltText("Mine").length).toBe(10)
+		expect(screen.getAllByAltText(/tile_mine/i).length).toBe(10)
+	})
+
+	it("should contain 9 ship pieces", () => {
+		// Arrange
+		const { container } = render(<Game />)
+		// Act
+		container.firstChild.firstChild.childNodes.forEach((tile) => fireEvent.click(tile))
+		// Assert
+		expect(screen.getAllByAltText(/tile_ship.*/i).length).toBe(9)
 	})
 
 	it("should reset after pressing New Game", () => {
@@ -35,9 +44,9 @@ describe("<Game /> tests", () => {
 		const { container } = render(<Game />)
 		// Act
 		fireEvent.click(container.firstChild.firstChild.firstChild)
-		let numTilesBefore = screen.getAllByAltText("Unrevealed").length
+		let numTilesBefore = screen.getAllByAltText(/tile_unrevealed/i).length
 		fireEvent.click(screen.getByRole("button", {name: /new game/i}))
-		let numTilesAfter = screen.getAllByAltText("Unrevealed").length
+		let numTilesAfter = screen.getAllByAltText(/tile_unrevealed/i).length
 		// Assert
 		expect(numTilesAfter).not.toBe(numTilesBefore)
 	})

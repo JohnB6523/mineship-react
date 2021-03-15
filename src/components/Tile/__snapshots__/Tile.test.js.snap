@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Tile /> tests should render as button with image tile_unrevealed.png 1`] = `
+exports[`<Tile /> tests should render as button with image passed to it 1`] = `
 <button
   class="tile"
 >
   <img
-    alt="Unrevealed"
+    alt="tile_unrevealed"
     src="tile_unrevealed.png"
   />
 </button>

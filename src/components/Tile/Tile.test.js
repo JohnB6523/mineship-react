@@ -5,8 +5,8 @@ import { Tile } from "./Tile"
 import tile_unrevealed from "../../images/tile_unrevealed.png"
 
 describe("<Tile /> tests", () => {
-	it("should render as button with image tile_unrevealed.png", () => {
-		const { container } = render(<Tile />)
+	it("should render as button with image passed to it", () => {
+		const { container } = render(<Tile image="tile_unrevealed"/>)
 		expect(container.firstChild).toMatchSnapshot()
 		expect(container.firstChild).toHaveClass("tile")
 		expect(container.firstChild.firstChild).toHaveAttribute("src", tile_unrevealed)

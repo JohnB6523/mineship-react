@@ -9,7 +9,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -17,7 +17,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -25,7 +25,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -33,7 +33,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -41,7 +41,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -49,7 +49,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -57,7 +57,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -65,7 +65,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -73,7 +73,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -81,7 +81,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -89,7 +89,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -97,7 +97,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -105,7 +105,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -113,7 +113,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -121,7 +121,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -129,7 +129,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -137,7 +137,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -145,7 +145,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -153,7 +153,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -161,7 +161,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -169,7 +169,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -177,7 +177,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -185,7 +185,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -193,7 +193,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -201,7 +201,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -209,7 +209,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -217,7 +217,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -225,7 +225,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -233,7 +233,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -241,7 +241,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -249,7 +249,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -257,7 +257,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -265,7 +265,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -273,7 +273,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -281,7 +281,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -289,7 +289,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -297,7 +297,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -305,7 +305,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -313,7 +313,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -321,7 +321,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -329,7 +329,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -337,7 +337,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -345,7 +345,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -353,7 +353,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -361,7 +361,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -369,7 +369,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -377,7 +377,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -385,7 +385,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -393,7 +393,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -401,7 +401,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -409,7 +409,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -417,7 +417,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -425,7 +425,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -433,7 +433,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -441,7 +441,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -449,7 +449,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -457,7 +457,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -465,7 +465,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -473,7 +473,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -481,7 +481,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -489,7 +489,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -497,7 +497,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -505,7 +505,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
@@ -513,7 +513,7 @@ exports[`<Game /> tests should render a board 1`] = `
       class="tile"
     >
       <img
-        alt="Unrevealed"
+        alt="tile_unrevealed"
         src="tile_unrevealed.png"
       />
     </button>
