@@ -3,6 +3,7 @@
 exports[`<Board /> tests should render as 8x8 grid of tiles with background 1`] = `
 <div
   class="board"
+  role="grid"
 >
   <button
     class="tile"

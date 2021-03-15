@@ -14,7 +14,7 @@ class Board extends React.Component {
 			}
 		}
 		return (
-			<div className="board">
+			<div className="board" role="grid">
 				{ tiles }
 			</div>
 		);

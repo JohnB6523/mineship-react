@@ -14,7 +14,7 @@ describe("<Game /> tests", () => {
 		// Arrange
 		const { container } = render(<Game />)
 		// Act
-		let tile = container.firstChild.firstChild.firstChild.firstChild
+		let tile = screen.getByRole("grid").firstChild.firstChild
 		fireEvent.click(tile)
 		// Assert
 		expect(tile).toHaveAttribute("src")
@@ -25,7 +25,7 @@ describe("<Game /> tests", () => {
 		// Arrange
 		const { container } = render(<Game />)
 		// Act
-		container.firstChild.firstChild.childNodes.forEach((tile) => fireEvent.click(tile))
+		screen.getByRole("grid").childNodes.forEach((tile) => fireEvent.click(tile))
 		// Assert
 		expect(screen.getAllByAltText(/tile_mine/i).length).toBe(10)
 	})
@@ -34,16 +34,25 @@ describe("<Game /> tests", () => {
 		// Arrange
 		const { container } = render(<Game />)
 		// Act
-		container.firstChild.firstChild.childNodes.forEach((tile) => fireEvent.click(tile))
+		screen.getByRole("grid").childNodes.forEach((tile) => fireEvent.click(tile))
 		// Assert
 		expect(screen.getAllByAltText(/tile_ship.*/i).length).toBe(9)
+	})
+
+	it("should contain blue numbers", () => {
+		// Arrange
+		const { container } = render(<Game />)
+		// Act
+		screen.getByRole("grid").childNodes.forEach((tile) => fireEvent.click(tile))
+		// Assert
+		expect(screen.getAllByAltText(/tile_[1-8]b/i).length).toBeGreaterThan(0)
 	})
 
 	it("should reset after pressing New Game", () => {
 		// Arrange
 		const { container } = render(<Game />)
 		// Act
-		fireEvent.click(container.firstChild.firstChild.firstChild)
+		fireEvent.click(screen.getByRole("grid").firstChild)
 		let numTilesBefore = screen.getAllByAltText(/tile_unrevealed/i).length
 		fireEvent.click(screen.getByRole("button", {name: /new game/i}))
 		let numTilesAfter = screen.getAllByAltText(/tile_unrevealed/i).length

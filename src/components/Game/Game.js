@@ -105,6 +105,34 @@ function initGame() {
 		// Place mine in tiles
 		tiles[newMine[0]][newMine[1]] = "tile_mine"
 	}
+	// Generate numbers
+	for (let i = 0; i < 8; i++) {
+		for (let j = 0; j < 8; j++) {
+			// Skips mines and ship pieces
+			if (tiles[i][j] !== "tile_0") {
+				continue
+			}
+			// Get surrounding tiles, with bounds check
+			let surroundArea = tiles.map(row => row.slice(Math.max(0,j-1), Math.min(8,j+2))).slice(Math.max(0,i-1), Math.min(8,i+2))
+			let surroundTiles = surroundArea.reduce((cumul, arr) => cumul.concat(arr))
+			// Count pieces and check if any ship pieces
+			let numPieces = 0
+			let blue = false
+			for (let tile of surroundTiles) {
+				if (tile === "tile_mine") {
+					numPieces++
+				} else if (tile.startsWith("tile_ship")) {
+					numPieces++
+					blue = true
+				}
+			}
+			// Update, if not 0
+			if (numPieces > 0) {
+				tiles[i][j] = "tile_" + numPieces + (blue ? "b" : "r")
+			}
+		}
+	}
+	// console.log(tiles)
 	return {tileImages: tileImages, tiles: tiles}
 }
 
@@ -114,17 +142,30 @@ class Game extends React.Component {
 		this.state = initGame()
 	}
 
-	handleClick(x, y) {
+	handleClick(i, j) {
+		// Nothing to do if already revealed
+		if (this.state.tileImages[i][j] !== "tile_unrevealed") {
+			return
+		}
 		let tileImages = this.state.tileImages.slice()
-		tileImages[y][x] = this.state.tiles[y][x]
+		tileImages[i][j] = this.state.tiles[i][j]
 		this.setState({tileImages: tileImages, tiles: this.state.tiles})
+	}
+
+	clickAll() {
+		for (let i = 0; i < 8; i++) {
+			for (let j = 0; j < 8; j++) {
+				this.handleClick(i,j)
+			}
+		}
 	}
 
 	render() {
 		return (
 			<div>
-				<Board onClick={(x, y) => this.handleClick(x, y)} tileImages={this.state.tileImages} />
+				<Board onClick={(i, j) => this.handleClick(i, j)} tileImages={this.state.tileImages} />
 				<NewGameButton onClick={() => this.setState(initGame())} />
+				<button onClick={() => this.clickAll()}>Clear All</button>
 			</div>
 		);
 	}
