@@ -147,7 +147,36 @@ class Game extends React.Component {
 			return
 		}
 		let tileImages = this.state.tileImages.slice()
-		if (this.state.tiles[i][j] === "tile_mine") {
+		if (this.state.tiles[i][j] === "tile_0") {
+			// propagate reveals of zeros
+			let revealedList = []
+			let propagateQueue = [[i,j]]
+			do {
+				let tile = propagateQueue.shift()
+				tileImages[tile[0]][tile[1]] = this.state.tiles[tile[0]][tile[1]]
+				revealedList.push(tile)
+				// If zero, add adjacent tiles to queue
+				if (this.state.tiles[tile[0]][tile[1]] === "tile_0") {
+					for (let i2 = Math.max(0,tile[0]-1); i2 < Math.min(8,tile[0]+2); i2++) {
+						for (let j2 = Math.max(0,tile[1]-1); j2 < Math.min(8,tile[1]+2); j2++) {
+							// Only add to queue if not already revealed and not already in queue
+							let doNotPropagateList = revealedList.concat(propagateQueue)
+							let doNotPropagate = false
+							for (let dnpTile of doNotPropagateList) {
+								if (dnpTile[0] === i2 && dnpTile[1] === j2) {
+									doNotPropagate = true
+								}
+							}
+							if (!doNotPropagate) {
+								propagateQueue.push([i2,j2])
+							}
+						}
+					}
+				}
+			} while (propagateQueue.length > 0)
+			this.setState({tileImages: tileImages, tiles: this.state.tiles, status: this.state.status})
+			return
+		} else if (this.state.tiles[i][j] === "tile_mine") {
 			// If mine, lose game
 			let status = "You Lose!"
 			this.setState({tileImages: this.state.tiles, tiles: this.state.tiles, status: status})
@@ -170,7 +199,7 @@ class Game extends React.Component {
 			}
 		}
 		tileImages[i][j] = this.state.tiles[i][j]
-		this.setState({tileImages: tileImages, tiles: this.state.tiles})
+		this.setState({tileImages: tileImages, tiles: this.state.tiles, status: this.state.status})
 	}
 
 	clickAll() {
