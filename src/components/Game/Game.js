@@ -132,8 +132,7 @@ function initGame() {
 			}
 		}
 	}
-	// console.log(tiles)
-	return {tileImages: tileImages, tiles: tiles}
+	return {tileImages: tileImages, tiles: tiles, status: ""}
 }
 
 class Game extends React.Component {
@@ -143,27 +142,46 @@ class Game extends React.Component {
 	}
 
 	handleClick(i, j) {
-		// Nothing to do if already revealed
-		if (this.state.tileImages[i][j] !== "tile_unrevealed") {
+		// Nothing to do if already revealed, or game is finished
+		if (this.state.tileImages[i][j] !== "tile_unrevealed" || this.state.status !== "") {
 			return
 		}
 		let tileImages = this.state.tileImages.slice()
+		if (this.state.tiles[i][j] === "tile_mine") {
+			// If mine, lose game
+			let status = "You Lose!"
+			this.setState({tileImages: this.state.tiles, tiles: this.state.tiles, status: status})
+			return
+		} else if (this.state.tiles[i][j].startsWith("tile_ship")) {
+			// if ship piece, check if won
+			let numShipPieces = 0
+			for (let row of tileImages) {
+				for (let tile of row) {
+					if (tile.startsWith("tile_ship")) {
+						numShipPieces++
+					}
+				}
+			}
+			// If all ship pieces revealed, win game, otherwise reveal clicked tile as normal
+			if (numShipPieces === 8) {
+				let status = "You Win!"
+				this.setState({tileImages: this.state.tiles, tiles: this.state.tiles, status: status})
+				return
+			}
+		}
 		tileImages[i][j] = this.state.tiles[i][j]
 		this.setState({tileImages: tileImages, tiles: this.state.tiles})
 	}
 
 	clickAll() {
-		for (let i = 0; i < 8; i++) {
-			for (let j = 0; j < 8; j++) {
-				this.handleClick(i,j)
-			}
-		}
+		this.setState({tileImages: this.state.tiles, tiles: this.state.tiles})
 	}
 
 	render() {
 		return (
 			<div>
 				<Board onClick={(i, j) => this.handleClick(i, j)} tileImages={this.state.tileImages} />
+				<span role="presentation" aria-label={ this.state.status }>{ this.state.status }</span>
 				<NewGameButton onClick={() => this.setState(initGame())} />
 				<button onClick={() => this.clickAll()}>Clear All</button>
 			</div>

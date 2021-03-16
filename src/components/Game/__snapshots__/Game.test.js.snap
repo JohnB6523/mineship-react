@@ -519,6 +519,10 @@ exports[`<Game /> tests should render a board 1`] = `
       />
     </button>
   </div>
+  <span
+    aria-label=""
+    role="presentation"
+  />
   <button>
     New Game
   </button>

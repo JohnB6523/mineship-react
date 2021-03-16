@@ -8,9 +8,9 @@ class Board extends React.Component {
 	}
 	render() {
 		let tiles = []
-		for (let y = 0; y < 8; y ++) {
-			for (let x = 0; x < 8; x++) {
-				tiles.push(<Tile key={y*8+x} onClick={() => this.props.onClick(x, y)} image={this.props.tileImages[y][x]} />)
+		for (let i = 0; i < 8; i ++) {
+			for (let j = 0; j < 8; j++) {
+				tiles.push(<Tile key={i*8+j} onClick={() => this.props.onClick(i, j)} image={this.props.tileImages[i][j]} />)
 			}
 		}
 		return (

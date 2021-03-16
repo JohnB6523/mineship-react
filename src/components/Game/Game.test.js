@@ -48,12 +48,21 @@ describe("<Game /> tests", () => {
 		expect(screen.getAllByAltText(/tile_[1-8]b/i).length).toBeGreaterThan(0)
 	})
 
+	it("should end game by the time all tiles are clicked", () => {
+		// Arrange
+		const { container } = render(<Game />)
+		// Act
+		screen.getByRole("grid").childNodes.forEach((tile) => fireEvent.click(tile))
+		// Arrange
+		expect(screen.getByRole("presentation", {name: /you (win|lose)\!/i})).toBeInTheDocument()
+	})
+
 	it("should reset after pressing New Game", () => {
 		// Arrange
 		const { container } = render(<Game />)
 		// Act
 		fireEvent.click(screen.getByRole("grid").firstChild)
-		let numTilesBefore = screen.getAllByAltText(/tile_unrevealed/i).length
+		let numTilesBefore = screen.queryAllByAltText(/tile_unrevealed/i).length
 		fireEvent.click(screen.getByRole("button", {name: /new game/i}))
 		let numTilesAfter = screen.getAllByAltText(/tile_unrevealed/i).length
 		// Assert
