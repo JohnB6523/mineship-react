@@ -1,12 +1,18 @@
 import * as React from "react"
 import { Board } from "../Board"
 import { NewGameButton } from "../NewGameButton/NewGameButton"
+import icon_ship_2 from "../../images/icon_ship_2.png"
+import icon_ship_3 from "../../images/icon_ship_3.png"
+import icon_ship_4 from "../../images/icon_ship_4.png"
+import icon_ship_destroyed from "../../images/icon_ship_destroyed.png"
 
 function initGame() {
 	// Generate unrevealed tiles and tile Images
 	let tiles = Array.from({length: 8}, () => Array.from({length: 8}, () => "tile_0"))
 	let tileImages = Array.from({length: 8}, () => Array.from({length: 8}, () => "tile_unrevealed"))
 	// Generate ships
+	// Array of ships only used to track which have been destroyed
+	let ships = []
 	let directions = ["u", "r", "d", "l"]
 	for (let i = 0; i < 3; i++) {
 		// Direction ship is pointing: Up is 0, Right is 1, Down is 2, Left is 3
@@ -89,6 +95,7 @@ function initGame() {
 					tiles[newShip[k][0]][newShip[k][1]] = "tile_ship_middle_" + shipDirection
 			}
 		}
+		ships.push({ positions: newShip, destroyed: false })
 	}
 	// Generate 10 mines
 	for (let i = 0; i < 10; i++) {
@@ -132,7 +139,7 @@ function initGame() {
 			}
 		}
 	}
-	return {tileImages: tileImages, tiles: tiles, status: ""}
+	return {tileImages: tileImages, tiles: tiles, status: "", ships: ships}
 }
 
 class Game extends React.Component {
@@ -147,6 +154,8 @@ class Game extends React.Component {
 			return
 		}
 		let tileImages = this.state.tileImages.slice()
+		let ships = this.state.ships.slice()
+		tileImages[i][j] = this.state.tiles[i][j]
 		if (this.state.tiles[i][j] === "tile_0") {
 			// propagate reveals of zeros
 			let revealedList = []
@@ -174,12 +183,12 @@ class Game extends React.Component {
 					}
 				}
 			} while (propagateQueue.length > 0)
-			this.setState({tileImages: tileImages, tiles: this.state.tiles, status: this.state.status})
+			this.setState({tileImages: tileImages, tiles: this.state.tiles, status: this.state.status, ships: ships})
 			return
 		} else if (this.state.tiles[i][j] === "tile_mine") {
 			// If mine, lose game
 			let status = "You Lose!"
-			this.setState({tileImages: this.state.tiles, tiles: this.state.tiles, status: status})
+			this.setState({tileImages: this.state.tiles, tiles: this.state.tiles, status: status, ships: ships})
 			return
 		} else if (this.state.tiles[i][j].startsWith("tile_ship")) {
 			// if ship piece, check if won
@@ -191,28 +200,41 @@ class Game extends React.Component {
 					}
 				}
 			}
+			// check if ship is destroyed and update icon
+			for (let ship of ships) {
+				let isDestroyed = ship.positions.map(([i,j]) => tileImages[i][j] === this.state.tiles[i][j]).reduce((cumul, next) => cumul && next)
+				if (isDestroyed) {
+					ship.destroyed = true
+				}
+			}
 			// If all ship pieces revealed, win game, otherwise reveal clicked tile as normal
-			if (numShipPieces === 8) {
+			if (numShipPieces === 9) {
 				let status = "You Win!"
-				this.setState({tileImages: this.state.tiles, tiles: this.state.tiles, status: status})
+				this.setState({tileImages: this.state.tiles, tiles: this.state.tiles, status: status, ships: ships})
 				return
 			}
 		}
-		tileImages[i][j] = this.state.tiles[i][j]
-		this.setState({tileImages: tileImages, tiles: this.state.tiles, status: this.state.status})
+		this.setState({tileImages: tileImages, tiles: this.state.tiles, status: this.state.status, ships: ships})
 	}
 
 	clickAll() {
-		this.setState({tileImages: this.state.tiles, tiles: this.state.tiles})
+		this.setState({tileImages: this.state.tiles, tiles: this.state.tiles, ships: this.state.ships})
 	}
 
 	render() {
 		return (
 			<div>
 				<Board onClick={(i, j) => this.handleClick(i, j)} tileImages={this.state.tileImages} />
+				<div class="icons">
+					<img src={this.state.ships[0].destroyed ? icon_ship_destroyed : icon_ship_2} alt={this.state.ships[0].destroyed ? icon_ship_destroyed : icon_ship_2} />
+					<img src={this.state.ships[1].destroyed ? icon_ship_destroyed : icon_ship_3} alt={this.state.ships[1].destroyed ? icon_ship_destroyed : icon_ship_3} />
+					<img src={this.state.ships[2].destroyed ? icon_ship_destroyed : icon_ship_4} alt={this.state.ships[2].destroyed ? icon_ship_destroyed : icon_ship_4} />
+				</div>
+				<div class="menu">
+					<NewGameButton onClick={() => this.setState(initGame())} />
+					<button onClick={() => this.clickAll()}>Clear All</button>
+				</div>
 				<span role="presentation" aria-label={ this.state.status }>{ this.state.status }</span>
-				<NewGameButton onClick={() => this.setState(initGame())} />
-				<button onClick={() => this.clickAll()}>Clear All</button>
 			</div>
 		);
 	}
