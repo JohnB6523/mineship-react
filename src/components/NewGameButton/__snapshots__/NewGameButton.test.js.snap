@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<NewGameButton /> tests should render as default button with text New Game 1`] = `
-<button>
-  New Game
-</button>
-`;

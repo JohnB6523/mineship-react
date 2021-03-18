@@ -1,10 +1,13 @@
 import * as React from "react"
 import { Board } from "../Board"
-import { NewGameButton } from "../NewGameButton/NewGameButton"
 import icon_ship_2 from "../../images/icon_ship_2.png"
 import icon_ship_3 from "../../images/icon_ship_3.png"
 import icon_ship_4 from "../../images/icon_ship_4.png"
 import icon_ship_destroyed from "../../images/icon_ship_destroyed.png"
+import rules_3r from "../../images/rules_3r.png"
+import rules_3b_1ship from "../../images/rules_3b_1ship.png"
+import rules_3b_2ship from "../../images/rules_3b_2ship.png"
+import rules_3b_3ship from "../../images/rules_3b_3ship.png"
 
 function initGame() {
 	// Generate unrevealed tiles and tile Images
@@ -139,6 +142,7 @@ function initGame() {
 			}
 		}
 	}
+	console.log(tiles)
 	return {tileImages: tileImages, tiles: tiles, status: "", ships: ships}
 }
 
@@ -224,17 +228,39 @@ class Game extends React.Component {
 	render() {
 		return (
 			<div>
-				<Board onClick={(i, j) => this.handleClick(i, j)} tileImages={this.state.tileImages} />
-				<div class="icons">
-					<img src={this.state.ships[0].destroyed ? icon_ship_destroyed : icon_ship_2} alt={this.state.ships[0].destroyed ? icon_ship_destroyed : icon_ship_2} />
-					<img src={this.state.ships[1].destroyed ? icon_ship_destroyed : icon_ship_3} alt={this.state.ships[1].destroyed ? icon_ship_destroyed : icon_ship_3} />
-					<img src={this.state.ships[2].destroyed ? icon_ship_destroyed : icon_ship_4} alt={this.state.ships[2].destroyed ? icon_ship_destroyed : icon_ship_4} />
+				<h1 className="title">MineShip</h1>
+				<div className="boardDiv">
+					<Board onClick={(i, j) => this.handleClick(i, j)} tileImages={this.state.tileImages} />
 				</div>
-				<div class="menu">
-					<NewGameButton onClick={() => this.setState(initGame())} />
-					<button onClick={() => this.clickAll()}>Clear All</button>
+				<div className="icons">
+					<img className="icon" src={this.state.ships[0].destroyed ? icon_ship_destroyed : icon_ship_2} alt={this.state.ships[0].destroyed ? icon_ship_destroyed : icon_ship_2} />
+					<img className="icon" src={this.state.ships[1].destroyed ? icon_ship_destroyed : icon_ship_3} alt={this.state.ships[1].destroyed ? icon_ship_destroyed : icon_ship_3} />
+					<img className="icon" src={this.state.ships[2].destroyed ? icon_ship_destroyed : icon_ship_4} alt={this.state.ships[2].destroyed ? icon_ship_destroyed : icon_ship_4} />
 				</div>
-				<span role="presentation" aria-label={ this.state.status }>{ this.state.status }</span>
+				<div className="menu">
+					<button className="button" onClick={() => this.setState(initGame())}>New Game</button>
+					<button className="button" onClick={() => document.getElementById("rulesModal").style.display = "block"}>Rules</button>
+				</div>
+				<div className="winLoseDiv">
+					<span className="winLoseMessage" role="presentation" aria-label={ this.state.status }><b>{ this.state.status }</b></span>
+				</div>
+				<div id="rulesModal" className="modal" onClick={(event) => {let modal = document.getElementById("rulesModal"); if(event.target === modal) {modal.style.display = "none"}}}>
+					<div className="modalContent" role="dialog">
+						<span className="close" onClick={() => document.getElementById("rulesModal").style.display = "none"}>&times;</span>
+						<div>
+							<h2 className="rulesHeader">Rules</h2>
+							<p>This game is inspired by Minesweeper and Battleship. The goal is to find all of the ships, without finding any of the mines. There are three ships, one that is 2 tiles long, one 3 tiles long and one 4 tiles long.</p>
+							<p>When you click a tile, what's underneath will be revealed. This could be a segment of a ship, a mine, or a number. When a number is revealed, this tells you how many of the 8 surrounding tiles contain either a ship segment, or a mine. If a number is red, that means all the surrounding non-number tiles are mines. If it is blue, at least one of teh surrounding non-number tiles is a ship segment. For example, a red 3 means there are 3 mines in the surrounding tiles. A blue 3 could mean 2 mines and 1 ship segment, 1 mine and 2 ship segments, or 3 ship segments.</p>
+							<div className="rulesImages">
+								<img className="rulesImage" src={rules_3r} alt="3 mines surround the middle tile, so it is a red 3." />
+								<img className="rulesImage" src={rules_3b_1ship} alt="2 mines and 1 ship piece produces a blue 3." />
+								<img className="rulesImage" src={rules_3b_2ship} alt="1 mine and 2 ship pieces also produces a blue 3. Note the ship pieces aren't necessarily from the same ship." />
+								<img className="rulesImage" src={rules_3b_3ship} alt="If you're lucky, a blue 3 could mean 3 ship pieces, and 0 mines." />
+							</div>
+							<p>If you manage to reveal all of the ship segments without revealing any mines, you win the game. If you're unlucky and reveal even a single mine, you'll lose. Whnever the game ends, win or lose, the rest of the board is revealed.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	}

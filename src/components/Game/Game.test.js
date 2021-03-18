@@ -12,7 +12,7 @@ describe("<Game /> tests", () => {
 
 	it("should change image of tile when clicked", () => {
 		// Arrange
-		const { container } = render(<Game />)
+		render(<Game />)
 		// Act
 		let tile = screen.getByRole("grid").firstChild.firstChild
 		fireEvent.click(tile)
@@ -23,7 +23,7 @@ describe("<Game /> tests", () => {
 
 	it("should contain 10 mines", () => {
 		// Arrange
-		const { container } = render(<Game />)
+		render(<Game />)
 		// Act
 		screen.getByRole("grid").childNodes.forEach((tile) => fireEvent.click(tile))
 		// Assert
@@ -32,7 +32,7 @@ describe("<Game /> tests", () => {
 
 	it("should contain 9 ship pieces", () => {
 		// Arrange
-		const { container } = render(<Game />)
+		render(<Game />)
 		// Act
 		screen.getByRole("grid").childNodes.forEach((tile) => fireEvent.click(tile))
 		// Assert
@@ -41,7 +41,7 @@ describe("<Game /> tests", () => {
 
 	it("should contain blue numbers", () => {
 		// Arrange
-		const { container } = render(<Game />)
+		render(<Game />)
 		// Act
 		screen.getByRole("grid").childNodes.forEach((tile) => fireEvent.click(tile))
 		// Assert
@@ -50,7 +50,7 @@ describe("<Game /> tests", () => {
 
 	it("should end game by the time all tiles are clicked", () => {
 		// Arrange
-		const { container } = render(<Game />)
+		render(<Game />)
 		// Act
 		screen.getByRole("grid").childNodes.forEach((tile) => fireEvent.click(tile))
 		// Arrange
@@ -59,7 +59,7 @@ describe("<Game /> tests", () => {
 
 	it("should reset after pressing New Game", () => {
 		// Arrange
-		const { container } = render(<Game />)
+		render(<Game />)
 		// Act
 		fireEvent.click(screen.getByRole("grid").firstChild)
 		let numTilesBefore = screen.queryAllByAltText(/tile_unrevealed/i).length

@@ -2,6 +2,11 @@
 
 exports[`<Game /> tests should render a board 1`] = `
 <div>
+  <h1
+    class="title"
+  >
+    MineShip
+  </h1>
   <div
     class="board"
     role="grid"
@@ -519,15 +524,92 @@ exports[`<Game /> tests should render a board 1`] = `
       />
     </button>
   </div>
+  <div
+    class="icons"
+  >
+    <img
+      alt="icon_ship_2.png"
+      src="icon_ship_2.png"
+    />
+    <img
+      alt="icon_ship_3.png"
+      src="icon_ship_3.png"
+    />
+    <img
+      alt="icon_ship_4.png"
+      src="icon_ship_4.png"
+    />
+  </div>
+  <div
+    class="menu"
+  >
+    <button
+      class="button"
+    >
+      New Game
+    </button>
+    <button
+      class="button"
+    >
+      Rules
+    </button>
+  </div>
   <span
     aria-label=""
     role="presentation"
   />
-  <button>
-    New Game
-  </button>
-  <button>
-    Clear All
-  </button>
+  <div
+    class="modal"
+    id="rulesModal"
+  >
+    <div
+      class="modalContent"
+      role="dialog"
+    >
+      <span
+        class="close"
+      >
+        ×
+      </span>
+      <div>
+        <h3>
+          Rules
+        </h3>
+        <p>
+          This game is inspired by Minesweeper and Battleship. The goal is to find all of the ships, without finding any of the mines. There are three ships, one that is 2 tiles long, one 3 tiles long and one 4 tiles long.
+        </p>
+        <p>
+          When you click a tile, what's underneath will be revealed. This could be a segment of a ship, a mine, or a number. When a number is revealed, this tells you how many of the 8 surrounding tiles contain either a ship segment, or a mine. If a number is red, that means all the surrounding non-number tiles are mines. If it is blue, at least one of teh surrounding non-number tiles is a ship segment. For example, a red 3 means there are 3 mines in the surrounding tiles. A blue 3 could mean 2 mines and 1 ship segment, 1 mine and 2 ship segments, or 3 ship segments.
+        </p>
+        <div
+          class="rulesImages"
+        >
+          <img
+            alt="3 mines surround the middle tile, so it is a red 3."
+            class="rulesImage"
+            src="rules_3r.png"
+          />
+          <img
+            alt="2 mines and 1 ship piece produces a blue 3."
+            class="rulesImage"
+            src="rules_3b_1ship.png"
+          />
+          <img
+            alt="1 mine and 2 ship pieces also produces a blue 3. Note the ship pieces aren't necessarily from the same ship."
+            class="rulesImage"
+            src="rules_3b_2ship.png"
+          />
+          <img
+            alt="If you're lucky, a blue 3 could mean 3 ship pieces, and 0 mines."
+            class="rulesImage"
+            src="rules_3b_3ship.png"
+          />
+        </div>
+        <p>
+          If you manage to reveal all of the ship segments without revealing any mines, you win the game. If you're unlucky and reveal even a single mine, you'll lose. Whnever the game ends, win or lose, the rest of the board is revealed.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 `;

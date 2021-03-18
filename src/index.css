@@ -1,3 +1,13 @@
+html {
+    background-color: #8840ff;
+    color: #301860;
+    width: 402px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .board {
     display: inline-grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
@@ -5,7 +15,7 @@
     padding: 1px;
 }
 
-.tile{
+.tile {
     display: inline-block;
     border: none;
     margin: 0;
@@ -15,4 +25,74 @@
     line-height: 1;
     background: transparent;
     -webkit-appearance: none;
+}
+
+.icons{
+    text-align: right;
+    padding-top: 8px;
+}
+
+.icon{
+    padding-left: 8px;
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 48px;
+    margin-right: 48px;
+    background-color: #b0b0c0;
+    border-color: #808090;
+    width: 96px;
+    height: 32px;
+}
+
+.winLoseDiv{
+    padding: 24px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+    background-color: #8840ff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+}
+
+.rulesHeader {
+    text-align: center;
+}
+
+.rulesImages {
+    text-align: center;
+}
+
+.rulesImage {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
